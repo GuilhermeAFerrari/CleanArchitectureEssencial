@@ -1,7 +1,7 @@
 # Clean Arch Essencial
 
 <p align="center">
-    <a href="#.net-application">Application</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#application">Application</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="#-technologies-and-frameworks">Technologies and Frameworks</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="#requirements">Requirements</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="#running-the-application">Running the application</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -10,7 +10,7 @@
     <a href="#-license">License</a>
 </p>
 
-### .Net Application
+### Application
 
 The goal is to apply the concepts of clean architecture in .Net MVC Project
 
