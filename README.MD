@@ -1,52 +1,51 @@
-# Sales Web
+# Clean Arch Essencial
 
 <p align="center">
-    <a href="#aplicação-para-gerenciamento-de-vendas">Aplicação</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#-tecnologias-e-frameworks">Tecnologias e Frameworks</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#pré-requisitos">Pré-requisitos</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#executando-a-aplicação">Executando a aplicação</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#.net-application">Application</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#-technologies-and-frameworks">Technologies and Frameworks</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#requirements">Requirements</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#running-the-application">Running the application</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="#features">Features</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#-autor">Autor</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#-licença">Licença</a>
+    <a href="#-author">Author</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="#-license">License</a>
 </p>
 
-### Aplicação para gerenciamento de vendas
+### .Net Application
 
-O objetivo do projeto é aplicar os conceitos de MVC com utilização do recurso Razor Pages no ASP.NET
+The goal is to apply the concepts of clean architecture in .Net MVC Project
 
-## 🛠 Tecnologias e Frameworks
+## 🛠 Technologies and Frameworks
 - [.NET 6](https://visualstudio.microsoft.com/pt-br/vs/community/)
 - [EntityFrameworkCore](https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
 - [Razor Pages](https://docs.microsoft.com/pt-br/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio)
 
-## Pré-requisitos
-- Visual Studio versão 17.0 ou superior de 2022 para compilação e execução do back-end - [VisualStudio](https://visualstudio.microsoft.com/pt-br/vs/community/)
-- Banco de dados Microsoft SQLServer - [SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+## Requirements
+- Visual Studio version 17.0 or higher of 2022 for compiling and running the backend - [VisualStudio](https://visualstudio.microsoft.com/pt-br/vs/community/)
+- Microsoft SQLServer Database - [SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 
-## Executando a aplicação
+## Running the application
 ```bash
-# Clone este repositório ou faça o download .zip e extraia os arquivos
-$ git clone <https://github.com/GuilhermeAFerrari/Sales-Web.git>
+# Clone this repository or download .zip and extract the files
+$ git clone <https://github.com/GuilhermeAFerrari/CleanArchitectureEssencial.git>
 
-# Acesse a pasta Sales-Web do projeto e abra o arquvio src/SalesWebMvc.sln com o Visual Studio
+# Access the project's CleanArchitectureEssencial-main folder and open the solution file with Visual Studio
 
-# Abra o arquivo appsetting.json e configure sua string de conexao com o banco de dados adicionando ou editando valores na chave "ConnectionStrings"
+# Open the appsetting.json file and configure your connection string for the database adding or editing the values in the "ConnectionStrings" key
 
-# No console do gerenciador de pacotes execute o comando para executar as migrations
+# In the package manager console execute the command to run the migrations
 $ dotnet ef database update
 
-# Execute a aplicação (CRTL+F5)
+# Run the application (CRTL+F5)
 ```
 
 ## Features
-- Gerenciamento de Departamentos
-- Gerenciamento de Vendedores
-- Gerenciamento de Vendas
+- Products management
+- Categories management
 
-## 😎 Autor
+## 😎 Author
 - Guilherme Ferrari
 - E-mail: guile.ferrari@hotmail.com
 - [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/guilherme-antonio-ferrari/)
 
-## 📝 Licença
+## 📝 License
 MIT.
