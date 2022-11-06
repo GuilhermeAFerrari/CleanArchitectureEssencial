@@ -12,10 +12,19 @@
 
 ### Application
 
-The goal is to apply the concepts of clean architecture in .Net MVC Project
+The goal is to apply the concepts of clean architecture in .Net MVC Project, applying:
+- CQRS
+- Mediator
+- Repository
+- Dependency Injection 
+- ASP.NET Identity
 
 ## 🛠 Technologies and Frameworks
 - [.NET 6](https://visualstudio.microsoft.com/pt-br/vs/community/)
+- [xUnit](https://xunit.net/)
+- [AutoMapper](https://automapper.org/)
+- MediatR
+- [ASP.NET Identity](https://learn.microsoft.com/pt-br/aspnet/identity/overview/getting-started/introduction-to-aspnet-identity)
 - [EntityFrameworkCore](https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
 - [Razor Pages](https://docs.microsoft.com/pt-br/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio)
 
