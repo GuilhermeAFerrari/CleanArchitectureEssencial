@@ -20,6 +20,7 @@ namespace CleanArchMvc.API.Controllers
         public async Task<ActionResult<IEnumerable<CategoryDTO>>> Get()
         {
             var categories = await _categoryService.GetCategoriesAsync();
+
             if (categories is null)
                 return NotFound("Categories not found");
 
@@ -30,6 +31,7 @@ namespace CleanArchMvc.API.Controllers
         public async Task<ActionResult<CategoryDTO>> Get(int id)
         {
             var category = await _categoryService.GetByIdAsync(id);
+
             if (category is null)
                 return NotFound("Category not found");
 
@@ -43,6 +45,7 @@ namespace CleanArchMvc.API.Controllers
                 return BadRequest("Invalid data");
 
             await _categoryService.AddAsync(categoryDTO);
+
             return new CreatedAtRouteResult("GetCategory", new { id = categoryDTO.Id }, categoryDTO);            
         }
 
@@ -64,6 +67,7 @@ namespace CleanArchMvc.API.Controllers
         public async Task<ActionResult<CategoryDTO>> Delete(int id)
         {
             var category = await _categoryService.GetByIdAsync(id);
+
             if (category is null)
                 return NotFound("Category not found");
 
