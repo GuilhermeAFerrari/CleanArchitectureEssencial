@@ -21,6 +21,18 @@ public class TokenController : ControllerBase
         _configuration = configuration;
     }
 
+    [HttpPost("CreateUser")]
+    public async Task<ActionResult> CreateUser([FromBody] LoginDTO loginDTO)
+    {
+        var result = await _authentication.RegisterUserAsync(loginDTO.Email, loginDTO.Password);
+
+        if (result)
+            return Ok($"User {loginDTO.Email} was creat successfully");
+
+        ModelState.AddModelError(string.Empty, "An error occurred while creating the user");
+        return BadRequest(ModelState);
+    }
+
     [HttpPost("LoginUser")]
     public async Task<ActionResult<UserToken>> Login([FromBody] LoginDTO loginDTO)
     {
