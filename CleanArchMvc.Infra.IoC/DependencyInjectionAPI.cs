@@ -16,7 +16,7 @@ namespace CleanArchMvc.Infra.IoC
 {
     public static class DependencyInjectionAPI
     {
-        public static IServiceCollection AddInfraestructureAPI(this IServiceCollection services,
+        public static IServiceCollection AddInfrastructureAPI(this IServiceCollection services,
         IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
