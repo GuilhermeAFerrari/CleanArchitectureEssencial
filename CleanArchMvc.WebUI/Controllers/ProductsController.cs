@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CleanArchMvc.WebUI.Controllers;
 
-//[Authorize]
+[Authorize]
 public class ProductsController : Controller
 {
 	private readonly IProductService _productService;
